@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+/* global configurations */
+:root {
+    --bg-Color: #f4f4f4;
+    --font: 'Poppins', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+
+/*  global configuration ends here  */
+
+body {
+    background: gainsboro
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
+    
+   
+    align-items: center
+}
+
+
+.inputs {
+    margin-left: 20%;
+}
+
+.intro img{
+    width: 800px;
+    height: 575px;
+
+}
+.intro span {
+    color: #5A5297;
+    font-family: var(--font);
+}
+
+.intro h1 {
+    color: white;
+
+    font-family:  var(--font);
+    font-style: normal;
+    font-size: 42px;
+}
+
+form {
+    background: #202027;
+
+    border-radius: 12px;
+    opacity: 0.6;
+    width: 400px;
+    border-radius: 10px;
+    opacity: 0.8;
+    width: 350px;
+
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+form p {
+    text-align: center;
+    color: #F9FBFE;
+}
+
+form a {
+    text-decoration: none;
+    color: #F9FBFE;
+    font-family: var(--font);
+}
+
+
+
+label {
+    display: block;
+    color: white;
+    padding: 10px 0px;
+    margin-left: 40px;
+    font-family: var(--font);
+}
+
+
+
+input {
+    border: 2px solid #F9FBFE;
+    background: #202027;
+    border-radius: 5px;
+    padding: 7px;
+    width: 75%;
+    margin: 10px 40px;
+    box-sizing: border-box;
+    color: white;
+}
+
+input:focus {
+    outline: none;
+    color: white;
+}
+
+input[type=submit] {
+
+    border: none;
+    border-radius: 10px;
+    padding: 7px;
+    width: 75%;
+    background: #F9FBFE;
+    color: black;
+    margin: 20px 40px;
+    box-sizing: border-box;
+    font-family: var(--font);
+
+
+   
+}
+
+.submit {
+
+    border: none;
+    border-radius: 10px;
+    padding: 7px;
+    width: 75%;
+    color: white;
+    margin: 20px 75px;
+    box-sizing: border-box;
+    font-family: var(--font);
+
+
+   
+}
+
+    
+
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: 1;
+    /* Firefox */
+}
+
+
+/* Mobile responsiveness */
+
+  /* Smartphones (portrait) ----------- */
+  @media only screen and (max-width : 800px) {
+    .container{
+        grid-template-columns: 65%;
+        margin: 25% auto;
+        
+       } 
+
+    .intro{
+        display: none
+    }
+
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 412px) {
+    .container{
+        grid-template-columns: 65%;
+        margin: 15% auto;
+        
+       } 
+
+    .intro{
+        display: none
+    }
+}

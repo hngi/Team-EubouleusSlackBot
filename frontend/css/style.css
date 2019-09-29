@@ -74,6 +74,9 @@ form a {
     text-decoration: none;
     color: #F9FBFE;
     font-family: var(--font);
+    display: block;
+    text-align: center;
+    margin-top: 10px;
 }
 
 
